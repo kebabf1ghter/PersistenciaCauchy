@@ -10,7 +10,7 @@ public class GsonUtilEjemplo {
         try (FileWriter writer = new FileWriter(rutaArchivo)){
             gson.toJson(objeto, writer);
         } catch(IOException e){
-            System.out.println("An IO exception has occurred nigga");
+            System.out.println("An IO exception has occurred ");
         }
     }
 
@@ -19,7 +19,7 @@ public class GsonUtilEjemplo {
         try(FileReader reader = new FileReader(rutaArchivo)){
             return gson.fromJson(reader, clase);
         }catch(IOException e){
-            System.out.println("An IO exception has occurred nigga");
+            System.out.println("An IO exception has occurred ");
             return null;
         }
     }
